@@ -1,0 +1,15 @@
+
+.container {
+  width: 600px;
+  margin-top: 200px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 450px;
+  box-shadow: 10px 5px 5px gray;
+}
+a:hover{
+  color: red;
+}
+
