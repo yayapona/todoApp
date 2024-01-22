@@ -15,7 +15,7 @@ export class DataTaskService {
   ){};
 
   AddTask(data?: any): Observable<any>{
-    return this.api._post('evaluationagent/addAgent',data, httpOptions)
+    return this.api._post('api/v1/tasks/task',data, httpOptions)
   };
 
   getAllTask(data?: any): Observable<any>{
