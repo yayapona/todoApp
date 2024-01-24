@@ -12,4 +12,6 @@
 a:hover{
   color: red;
 }
-
+.task{
+  margin-bottom: 20px
+;}

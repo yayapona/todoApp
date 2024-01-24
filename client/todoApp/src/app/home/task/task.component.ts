@@ -32,7 +32,7 @@ export class TaskComponent implements OnInit{
       })
   };
   postTask(){
-    this.taskModel = this.formTask.get('taskName')?.value;
+    this.taskModel.taskName = this.formTask.get('taskName')?.value;
     this.taskService.AddTask(this.taskModel)
       .subscribe(res=> console.log(res))
   }
