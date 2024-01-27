@@ -14,7 +14,7 @@ app.use('/api/v1/users', userRoute);
 app.use('/api/v1/tasks', taskRoute)
 
 app.all('*', (req,res,next) => {
-    next(new AppError(`Pas de route associé à cet url ${req.originalUrl}`));
+    next(new AppError(`Pas de route associé à cet url ${req.originalUrl}`, 404));
 } )
 
 app.use(handlerErrorHandler)
